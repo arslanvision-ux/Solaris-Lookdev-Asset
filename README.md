@@ -21,6 +21,8 @@ A complete USD pipeline tool for Houdini Solaris (20+) that automates asset inge
 | ![Settings](screenshots/Settings.png) | ![Scan Models](screenshots/Scan_Models.png) |
 | **Gallery Tab** — Thumbnail grid with search, filter, and drag-and-drop | **Turntable Setup** — Automated turntable rendering configuration |
 | ![Gallery](screenshots/Gallery.png) | ![Turn Table Setup](screenshots/Turn_Table_Setup.png) |
+| **Preview Metadata** — Asset preview with detailed metadata inspection | |
+| ![Preview Metadata](screenshots/Preview_Metadata.png) | |
 
 ## Quick Start
 
