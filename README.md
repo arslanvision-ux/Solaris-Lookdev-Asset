@@ -13,6 +13,15 @@ A complete USD pipeline tool for Houdini Solaris (20+) that automates asset inge
 - **SQLite Database** — Per-project asset catalog with project alias support
 - **ACEScg Pipeline** — Industry-standard OCIO colorspace assignments per texture type
 
+## Screenshots
+
+| | |
+|:---:|:---:|
+| **Settings Tab** — Project alias, renderer config, and output directory setup | **Scanner Tab** — Directory scanning and batch processing controls |
+| ![Settings](screenshots/Settings.png) | ![Scan Models](screenshots/Scan_Models.png) |
+| **Gallery Tab** — Thumbnail grid with search, filter, and drag-and-drop | **Turntable Setup** — Automated turntable rendering configuration |
+| ![Gallery](screenshots/Gallery.png) | ![Turn Table Setup](screenshots/Turn_Table_Setup.png) |
+
 ## Quick Start
 
 ### 1. Set Up Houdini Environment
