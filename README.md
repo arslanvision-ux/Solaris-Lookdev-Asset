@@ -122,7 +122,7 @@ UDIM textures are detected automatically (e.g. `asset_basecolor.1001.exr`).
 
 ## Requirements
 
-- Houdini 20+ (PySide6)
+- Houdini 19.5+ (PySide2 / PySide6)
 - Python 3.10+
 - Optional: Arnold / Redshift plugins for those renderers
 
