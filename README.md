@@ -24,6 +24,27 @@ A complete USD pipeline tool for Houdini Solaris (20+) that automates asset inge
 | **Preview Metadata** — Asset preview with detailed metadata inspection | |
 | ![Preview Metadata](screenshots/Preview_Metadata.png) | |
 
+## Installation
+
+### Windows
+Double-click `install\install.bat` — or run the `.exe` from Releases.
+
+### Linux
+```bash
+bash install/install.sh
+```
+
+### macOS
+Double-click `install/install.command` — or `bash install/install.sh`.
+
+The installer will:
+1. Auto-detect your Houdini installation
+2. Copy plugin files to a directory you choose
+3. Write a Houdini package JSON so Houdini loads the plugin on startup
+4. The **Asset Manager** shelf tab appears next time you launch Houdini
+
+---
+
 ## Quick Start
 
 ### 1. Set Up Houdini Environment
