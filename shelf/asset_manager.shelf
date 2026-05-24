@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <toolshelf name="asset_manager_shelf" label="Asset Manager">
+    <memberTool name="launch_asset_manager"/>
+  </toolshelf>
+
+  <tool name="launch_asset_manager" label="Asset Manager" icon="SOP_object_merge">
+    <helpText><![CDATA[
+Launch the Solaris LOP Asset Manager.
+
+Scans directories for 3D models, auto-assigns MaterialX materials,
+renders thumbnails, and provides a gallery for drag-and-drop
+scene assembly.
+        ]]></helpText>
+    <script scriptType="python"><![CDATA[
+import sys
+import os
+import traceback
+import hou
+
+asset_manager_root = os.environ.get(
+    "ASSET_MANAGER_ROOT", r"E:\PROJECTS\ASSET_MANAGER"
+)
+scripts_dir = os.path.join(asset_manager_root, "scripts")
+
+if scripts_dir not in sys.path:
+    sys.path.insert(0, scripts_dir)
+
+try:
+    # Force a fresh import so edits to the package take effect without
+    # restarting Houdini.
+    for mod in [m for m in list(sys.modules) if m.startswith("asset_manager")]:
+        del sys.modules[mod]
+    from asset_manager.launcher import launch_panel
+    launch_panel()
+except Exception:
+    tb = traceback.format_exc()
+    print("[AssetManager] Launch failed:\n" + tb)
+    hou.ui.displayMessage(
+        "Asset Manager failed to launch.\n\n" + tb,
+        severity=hou.severityType.Error,
+        title="Asset Manager Error",
+    )
+        ]]></script>
+  </tool>
+</shelfDocument>

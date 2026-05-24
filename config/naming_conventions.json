@@ -1,0 +1,17 @@
+{
+    "conventions": {
+        "default": {
+            "base_color":    ["_basecolor", "_albedo", "_diffuse", "_col", "_diff", "_BaseColor", "_Albedo", "_Diffuse"],
+            "roughness":     ["_roughness", "_rough", "_rgh", "_Roughness", "_Rough"],
+            "metallic":      ["_metallic", "_metal", "_met", "_metallness", "_metalness", "_Metallic", "_Metal", "_Metallness", "_Metalness"],
+            "normal":        ["_normal", "_nml", "_nor", "_nrm", "_Normal", "_Nrm"],
+            "displacement":  ["_displacement", "_disp", "_height", "_Displacement", "_Height", "_Disp"],
+            "opacity":       ["_opacity", "_alpha", "_mask", "_Opacity", "_Alpha"],
+            "emissive":      ["_emissive", "_emit", "_emission", "_Emissive", "_Emission"],
+            "ao":            ["_ao", "_ambientocclusion", "_occlusion", "_AO", "_AmbientOcclusion"]
+        }
+    },
+    "supported_image_formats": [".exr", ".png", ".jpg", ".jpeg", ".tif", ".tiff", ".hdr", ".tex", ".rat"],
+    "supported_geo_formats":   [".usd", ".usda", ".usdc", ".usdz", ".obj", ".fbx", ".abc", ".bgeo", ".bgeo.sc"],
+    "udim_patterns": [".<UDIM>.", ".%(UDIM)d.", "._MAPID_.", ".1001."]
+}

@@ -1,0 +1,100 @@
+{
+    "renderers": {
+        "karma_cpu": {
+            "label": "Karma CPU",
+            "material_builder_type": "karmamaterialbuilder",
+            "surface_shader_type": "mtlxstandard_surface",
+            "image_node_type": "mtlximage",
+            "normalmap_node_type": "mtlxnormalmap",
+            "thumbnail_rop_type": "karma",
+            "render_settings_type": "",
+            "dome_light_type": "domelight",
+            "camera_type": "camera",
+            "default_samples": 64,
+            "thumbnail_resolution": [512, 512],
+            "karma_engine": "CPU",
+            "delegate": "BRAY_HdKarma"
+        },
+        "karma_xpu": {
+            "label": "Karma XPU",
+            "material_builder_type": "karmamaterialbuilder",
+            "surface_shader_type": "mtlxstandard_surface",
+            "image_node_type": "mtlximage",
+            "normalmap_node_type": "mtlxnormalmap",
+            "thumbnail_rop_type": "karma",
+            "render_settings_type": "",
+            "dome_light_type": "domelight",
+            "camera_type": "camera",
+            "default_samples": 64,
+            "thumbnail_resolution": [512, 512],
+            "karma_engine": "XPU",
+            "delegate": "BRAY_HdKarmaXPU"
+        },
+        "karma": {
+            "label": "Karma CPU (legacy alias)",
+            "material_builder_type": "karmamaterialbuilder",
+            "surface_shader_type": "mtlxstandard_surface",
+            "image_node_type": "mtlximage",
+            "normalmap_node_type": "mtlxnormalmap",
+            "thumbnail_rop_type": "karma",
+            "render_settings_type": "",
+            "dome_light_type": "domelight",
+            "camera_type": "camera",
+            "default_samples": 64,
+            "thumbnail_resolution": [512, 512],
+            "karma_engine": "CPU",
+            "delegate": "BRAY_HdKarma"
+        },
+        "arnold": {
+            "label": "Arnold",
+            "material_builder_type": "arnoldmaterialbuilder",
+            "surface_shader_type": "mtlxstandard_surface",
+            "image_node_type": "mtlximage",
+            "normalmap_node_type": "mtlxnormalmap",
+            "thumbnail_rop_type": "usdrender_rop",
+            "render_settings_type": "arnoldrendersettings",
+            "dome_light_type": "domelight",
+            "camera_type": "camera",
+            "default_samples": 3,
+            "thumbnail_resolution": [512, 512]
+        },
+        "redshift": {
+            "label": "Redshift",
+            "material_builder_type": "redshift_usd_material",
+            "surface_shader_type": "mtlxstandard_surface",
+            "image_node_type": "mtlximage",
+            "normalmap_node_type": "mtlxnormalmap",
+            "thumbnail_rop_type": "usdrender_rop",
+            "render_settings_type": "redshiftrendersettings",
+            "dome_light_type": "domelight",
+            "camera_type": "camera",
+            "default_samples": 64,
+            "thumbnail_resolution": [512, 512]
+        }
+    },
+    "default_renderer": "karma",
+    "thumbnail_hdri": "",
+    "thumbnail_background_color": [0.18, 0.18, 0.18],
+    "color_management": {
+        "ocio_config": "aces_1.2",
+        "working_space": "ACES - ACEScg",
+        "display": "sRGB",
+        "view": "ACES 1.0 - SDR Video",
+        "texture_colorspaces": {
+            "srgb_input": "Utility - sRGB - Texture",
+            "raw_data": "Utility - Raw",
+            "linear_srgb": "Utility - Linear - sRGB",
+            "acescg": "ACES - ACEScg"
+        },
+        "map_type_colorspace": {
+            "base_color": "Utility - sRGB - Texture",
+            "emissive": "Utility - sRGB - Texture",
+            "roughness": "Utility - Raw",
+            "metallic": "Utility - Raw",
+            "normal": "Utility - Raw",
+            "displacement": "Utility - Raw",
+            "opacity": "Utility - Raw",
+            "ao": "Utility - Raw"
+        }
+    }
+}

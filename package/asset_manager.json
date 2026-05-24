@@ -1,0 +1,22 @@
+{
+    "env": [
+        {
+            "PYTHONPATH": {
+                "value": "ASSET_MANAGER_INSTALL_PATH/scripts",
+                "method": "prepend"
+            }
+        },
+        {
+            "HOUDINI_SCRIPT_PATH": {
+                "value": "ASSET_MANAGER_INSTALL_PATH/houdini/scripts",
+                "method": "prepend"
+            }
+        },
+        {
+            "HOUDINI_TOOLBAR_PATH": {
+                "value": "ASSET_MANAGER_INSTALL_PATH/shelf",
+                "method": "prepend"
+            }
+        }
+    ]
+}

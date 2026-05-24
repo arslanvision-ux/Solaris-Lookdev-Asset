@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+*.so
+*.pyd
+.env
+
+# Houdini
+*.hip
+*.hiplc
+*.hda
+*.otl
+*.bgeo
+*.bgeo.sc
+*.geo
+*.vdb
+*.sim
+*.fur
+*.ptx
+*.pdc
+*.pts
+cop_files/
+desk/
+flipbook/
+footer.txt
+HoudiniOutput/
+icons/
+otls/
+pdg_jobs/
+render/
+scripts/python/
+SopOutput/
+temp/
+toolbar/
+video/
+*.hipnc
+*.hip
+*.hda
+*.otl
+
+# USD
+*.usd
+*.usda
+*.usdc
+*.usdz
+*.abc
+*.ass
+*.rs
+*.vrscene
+
+# Image / texture outputs
+*.exr
+*.tx
+*.rat
+*.ptex
+*.dds
+*.tga
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs / temp
+*.log
+*.tmp
+temp/
+logs/
