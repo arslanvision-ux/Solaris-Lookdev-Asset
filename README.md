@@ -5,6 +5,7 @@ A complete USD pipeline tool for Houdini Solaris (20+) that automates asset inge
 ## Features
 
 - **Directory Scanner** — Recursively discovers 3D models and auto-groups textures by naming convention
+- **Textures should be located in the same directory as the asset and put into textures folder
 - **MaterialX Material Builder** — Auto-creates `mtlxstandard_surface` shading networks with ACEScg color management
 - **USD Component Builder** — Composes assets with render, proxy (PolyReduce), and simulation (convex hull) geometry
 - **Gallery Manager** — Thumbnail grid with search, filter, drag-and-drop to scene
