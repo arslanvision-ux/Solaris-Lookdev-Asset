@@ -10,7 +10,7 @@ A complete USD pipeline tool for Houdini Solaris (20+) that automates asset inge
 - **USD Component Builder** — Composes assets with render, proxy (PolyReduce), and simulation (convex hull) geometry
 - **Gallery Manager** — Thumbnail grid with search, filter, drag-and-drop to scene
 - **PDG Batch Processing** — TOP networks for parallel asset processing
-- **Multi-Renderer** — Karma (CPU/XPU), Arnold, and Redshift via standard MaterialX
+- **Multi-Renderer** — Karma (CPU/XPU), Arnold via standard MaterialX
 - **SQLite Database** — Per-project asset catalog with project alias support
 - **ACEScg Pipeline** — Industry-standard OCIO colorspace assignments per texture type
 
@@ -81,7 +81,7 @@ register_python_panel()  # Follow the printed instructions
 1. **Settings Tab** → Create a project alias and set output directories
 2. **Scanner Tab** → Add source directories, click "Scan Directories"
 3. Review discovered assets in the results table
-4. Select renderer (Karma/Arnold/Redshift) and click "Process All Assets"
+4. Select renderer (Karma/Arnold) and click "Process All Assets"
 5. **Gallery Tab** → Browse processed assets with thumbnails
 6. **Drag & drop** or double-click to insert assets into your Solaris scene
 
@@ -148,7 +148,7 @@ UDIM textures are detected automatically (e.g. `asset_basecolor.1001.exr`).
 
 - Houdini 19.5+ (PySide2 / PySide6)
 - Python 3.10+
-- Optional: Arnold / Redshift plugins for those renderers
+- Optional: Arnold  plugins for this renderers
 
 ## Running Tests
 
